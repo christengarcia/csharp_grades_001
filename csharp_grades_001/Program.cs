@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace csharp_grades_001
 {
@@ -6,7 +10,12 @@ namespace csharp_grades_001
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GradeBook book = new GradeBook();
+            book.AddGrade(91);
+            book.AddGrade(89.5f);
+
+            GradeBook book2 = new GradeBook();
+            book2.AddGrade(75);
         }
     }
 }
